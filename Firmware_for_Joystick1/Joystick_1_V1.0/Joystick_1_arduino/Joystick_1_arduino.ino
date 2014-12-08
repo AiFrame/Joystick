@@ -154,6 +154,18 @@ void loop(){
             case 128://BUTTON_CIRCLE
                 Serial1.println("EN11!");//fire
             break;
+            case 96://BUTTON_FORK & BUTTON_SQUARE
+                Serial1.println("EN9!");//Down left
+            break;
+            case 160://BUTTON_FORK & BUTTON_CIRCLE
+                Serial1.println("EN10!");//Down right
+            break;
+            case 80://BUTTON_TRIANGLE & BUTTON_SQUARE
+                Serial1.println("EN19!");//Down left
+            break;
+            case 144://BUTTON_TRIANGLE & BUTTON_CIRCLE
+                Serial1.println("EN20!");//Down right
+            break;
             default :
                 Serial1.println("EN0!");
                 delay(70);
@@ -166,10 +178,10 @@ void loop(){
         switch(buttons)
         {
             case 1://SELECT
-                Serial1.println("EN9!");//Squat left
+                Serial1.println("EN15!");//Back down
             break;
             case 2://START
-                Serial1.println("EN10!");//Squat right
+                Serial1.println("EN16!");//face down
             break;
             case 4://L1
                 Serial1.println("EN5!");//left turn
