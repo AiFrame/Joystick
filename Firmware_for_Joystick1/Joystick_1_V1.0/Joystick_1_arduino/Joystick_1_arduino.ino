@@ -139,8 +139,20 @@ void loop(){
             case 4://PAD_LEFT
                 Serial1.println("EN3!");//left
             break;
+            case 5://PAD_LEFT& PAD_UP
+                Serial1.println("EN21!");//forward left
+            break;
+            case 6://PAD_LEFT& PAD_DOWN
+                Serial1.println("EN23!");//back left
+            break;
             case 8://PAD_RIGHT
                 Serial1.println("EN4!");//right
+            break;
+            case 9://PAD_RIGHT&PAD_UP
+                Serial1.println("EN22!");//forward right
+            break;
+            case 10://PAD_RIGHT&PAD_DOWN
+                Serial1.println("EN24!");//back right
             break;
             case 16://BUTTON_TRIANGLE
                 Serial1.println("EN14!");//stop
@@ -161,10 +173,10 @@ void loop(){
                 Serial1.println("EN10!");//Down right
             break;
             case 80://BUTTON_TRIANGLE & BUTTON_SQUARE
-                Serial1.println("EN19!");//Down left
+                Serial1.println("EN17!");//forward hit
             break;
             case 144://BUTTON_TRIANGLE & BUTTON_CIRCLE
-                Serial1.println("EN20!");//Down right
+                Serial1.println("EN18!");//back hit 
             break;
             default :
                 Serial1.println("EN0!");
@@ -192,8 +204,14 @@ void loop(){
             case 16://L2
                 Serial1.println("EN7!");//left hit
             break;
+            case 20://L1+L2
+                Serial1.println("EN19!");//left hit fast
+            break;
             case 32://R2
                 Serial1.println("EN8!");//right hit
+            break;
+            case 40://R1+R2
+                Serial1.println("EN20!");//right hit fast
             break;
             case 64://L3
                 Serial1.println("EN0!");//l3 stop and follow
