@@ -172,11 +172,11 @@ void loop(){
             case 40://BUTTON_FORK & PAD_RIGHT
                 Serial1.println("EN10!");//Down right
             break;
-            case 80://BUTTON_TRIANGLE & BUTTON_SQUARE
-                Serial1.println("EN17!");//forward hit
+            case 96://BUTTON_FORK & BUTTON_SQUARE
+                Serial1.println("EN17!");//hit back
             break;
             case 144://BUTTON_TRIANGLE & BUTTON_CIRCLE
-                Serial1.println("EN18!");//back hit 
+                Serial1.println("EN17!");//hit front
             break;
             default :
                 Serial1.println("EN0!");
