@@ -166,10 +166,10 @@ void loop(){
             case 128://BUTTON_CIRCLE
                 Serial1.println("EN11!");//fire
             break;
-            case 96://BUTTON_FORK & BUTTON_SQUARE
+            case 36://BUTTON_FORK & PAD_LEFT
                 Serial1.println("EN9!");//Down left
             break;
-            case 160://BUTTON_FORK & BUTTON_CIRCLE
+            case 40://BUTTON_FORK & PAD_RIGHT
                 Serial1.println("EN10!");//Down right
             break;
             case 80://BUTTON_TRIANGLE & BUTTON_SQUARE
