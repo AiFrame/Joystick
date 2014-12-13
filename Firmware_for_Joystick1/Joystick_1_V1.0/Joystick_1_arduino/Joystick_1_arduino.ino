@@ -173,7 +173,7 @@ void loop(){
                 Serial1.println("EN10!");//Down right
             break;
             case 96://BUTTON_FORK & BUTTON_SQUARE
-                Serial1.println("EN17!");//hit back
+                Serial1.println("EN18!");//hit back
             break;
             case 144://BUTTON_TRIANGLE & BUTTON_CIRCLE
                 Serial1.println("EN17!");//hit front
